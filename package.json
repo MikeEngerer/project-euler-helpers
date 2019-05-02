@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MikeEngerer/project-euler.git"
+    "url": "git+https://github.com/MikeEngerer/project-euler-helpers.git"
   },
   "keywords": [
     "project-euler",
