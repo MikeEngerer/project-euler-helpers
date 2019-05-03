@@ -11,6 +11,8 @@ module.exports = {
   findFactorSum,
   isPrime,
   genPrimeArr,
+  genAlphaArr,
+  genAlphaObj,
   isFib,
   fibNthTerm,
   genGrid,
