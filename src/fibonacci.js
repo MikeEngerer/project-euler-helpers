@@ -1,3 +1,22 @@
+const genFibArr = (n, last = [1], secondLast = [1], count = 2, arr = []) => {
+  if (!n) return
+  if (count === n + 2) return arr
+  let lastCopy = last.slice(), over = 0
+  for (let i = 0; i < last.length; i++) {
+    last[i] += secondLast[i] + over || over
+    if (last[i] > 9) {
+      over = 1
+      last[i] -= 10
+    } else {
+      over = 0
+    }
+  }
+  if (over) last.push(over)
+  count++
+  arr.push(Number(secondLast.reverse().join('')))
+  return genFibArr(n, last, lastCopy, count, arr)
+}
+
 const fibNthTerm = (n, last = [1], secondLast = [1], count = 2) => {
   if (!n) return
   if (count === n) return last.reverse().join('')
@@ -35,6 +54,7 @@ const isFib = (num, last = [1], secondLast = [1]) => {
 
 module.exports = {
   fibNthTerm,
-  isFib
+  isFib,
+  genFibArr
 
 }

@@ -26,8 +26,9 @@ runtime: 0.0s
 ```
 'fibonacci' module contains funcs for working with the fibonacci sequence.
 ```
-const { fibNthTerm, isFib } = require('project-euler-helpers')
+const { genFibArr, fibNthTerm, isFib } = require('project-euler-helpers')
 
+genFibArr(10) // [ 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 ]
 fibNthTerm(10) // 55
 isFib(55) // true
 isFib(4) // false
