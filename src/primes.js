@@ -19,7 +19,7 @@ const genPrimeArrUnderMax = (max) => {
         break
       }
       if (i === (len - 1) && newPrime % primes[i] !== 0) {
-        if (newPrime > max) {
+        if (newPrime >= max) {
           return primes
         }
         primes.push(newPrime)

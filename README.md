@@ -38,7 +38,7 @@ isFib(4) // false
 
 These could be more efficient; will improve as problems become more computationally demanding.
 ```
-const { isPrime, genPrimeArr } = require('project-euler-helpers')
+const { isPrime, genPrimeArr, genPrimeArrUnderMax } = require('project-euler-helpers')
 
 isPrime(10) // false
 isPrime(11) // true
