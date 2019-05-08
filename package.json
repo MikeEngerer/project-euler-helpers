@@ -1,6 +1,6 @@
 {
   "name": "project-euler-helpers",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Helper functions for common tasks in the project-euler challenges.",
   "main": "index.js",
   "scripts": {
