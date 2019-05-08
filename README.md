@@ -43,6 +43,7 @@ const { isPrime, genPrimeArr, genPrimeArrUnderMax } = require('project-euler-hel
 isPrime(10) // false
 isPrime(11) // true
 genPrimeArr(5) // [2, 3, 5, 7, 11]
+genPrimeArrUnderMax(10) // [2, 3, 5, 7]
 ```
 'factors' module contains functions for handling factors.
 ```
