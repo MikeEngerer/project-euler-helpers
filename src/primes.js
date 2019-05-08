@@ -9,6 +9,26 @@ const isPrime = (num) => {
   return true
 }
 
+const genPrimeArrUnderMax = (max) => {
+  let primes = [2,3,5,7,11]
+  let newPrime = 13
+  while (true) {
+    let len = primes.length
+    for (let i = 0; i < len; i++) {
+      if (newPrime % primes[i] === 0) {
+        break
+      }
+      if (i === (len - 1) && newPrime % primes[i] !== 0) {
+        if (newPrime > max) {
+          return primes
+        }
+        primes.push(newPrime)
+      }
+    }
+    newPrime += 2
+  }
+}
+
 const genPrimeArr = (numPrimes) => {
   let primes = [2,3,5,7,11]
   let newPrime = 13
@@ -30,5 +50,6 @@ const genPrimeArr = (numPrimes) => {
 
 module.exports = {
   isPrime,
-  genPrimeArr
+  genPrimeArr,
+  genPrimeArrUnderMax
 }

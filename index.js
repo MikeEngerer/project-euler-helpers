@@ -1,5 +1,5 @@
 const { findFactors, findFactorCount, findFactorSum } = require('./src/factors')
-const { isPrime, genPrimeArr } = require('./src/primes')
+const { isPrime, genPrimeArr, genPrimeArrUnderMax } = require('./src/primes')
 const { genAlphaArr, genAlphaObj } = require('./src/alphabet')
 const { genFibArr, isFib, fibNthTerm } = require('./src/fibonacci')
 const { genGrid } = require('./src/grid')
@@ -17,5 +17,6 @@ module.exports = {
   genFibArr,
   fibNthTerm,
   genGrid,
-  runtime
+  runtime,
+  genPrimeArrUnderMax
 }
