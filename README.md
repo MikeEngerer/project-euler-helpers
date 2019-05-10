@@ -60,6 +60,15 @@ const { genGrid } = require('project-euler-helpers')
 genGrid(3, 4, 0) // [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]] *(rows, cols, val)*
 ```
 
+'pandigital' module contains functions for working with pandigital nums.
+```
+const { isPandigital } = require('project-euler-helpers')
+
+// isPandigital(num, range = 9)
+isPandigital(123456789) // true
+isPandigital(53142, 5) // true
+isPandigital(12345, 4) // false
+```
 'alphabet' module contains functions for generating arrays/objects of characters.
 ```
 const { genAlphaArr, genAlphaObj } = require('project-euler-helpers')

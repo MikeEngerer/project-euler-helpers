@@ -4,6 +4,7 @@ const { genAlphaArr, genAlphaObj } = require('./src/alphabet')
 const { genFibArr, isFib, fibNthTerm } = require('./src/fibonacci')
 const { genGrid } = require('./src/grid')
 const { runtime } = require('./src/runtime')
+const { isPandigital } = require('./src/pandigital')
 
 module.exports = {
   findFactors,
@@ -18,5 +19,6 @@ module.exports = {
   fibNthTerm,
   genGrid,
   runtime,
-  genPrimeArrUnderMax
+  genPrimeArrUnderMax,
+  isPandigital
 }
