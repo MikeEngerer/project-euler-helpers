@@ -5,6 +5,7 @@ const { genFibArr, isFib, fibNthTerm } = require('./src/fibonacci')
 const { genGrid } = require('./src/grid')
 const { runtime } = require('./src/runtime')
 const { isPandigital } = require('./src/pandigital')
+const { isPalindrome } = require('./src/palindromes')
 
 module.exports = {
   findFactors,
@@ -20,5 +21,6 @@ module.exports = {
   genGrid,
   runtime,
   genPrimeArrUnderMax,
-  isPandigital
+  isPandigital,
+  isPalindrome
 }

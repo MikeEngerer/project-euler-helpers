@@ -53,6 +53,13 @@ findFactors(10) // [1, 2, 5, 10] *unsorted*
 findFactorSum(10) // 18
 findFactorCount(10) // 4
 ```
+'palindromes' module contains functions for handling palindromes.
+```
+const { isPalindrome } = require('project-euler-helpers')
+
+isPalindrome(101) // true
+isPalindrome(1010) // false
+```
 'grid' module contains functions for creating grids (2d arrs).
 ```
 const { genGrid } = require('project-euler-helpers')
