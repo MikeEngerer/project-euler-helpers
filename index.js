@@ -6,6 +6,7 @@ const { genGrid } = require('./src/grid')
 const { runtime } = require('./src/runtime')
 const { isPandigital } = require('./src/pandigital')
 const { isPalindrome } = require('./src/palindromes')
+const { Array } = require('./src/Array')
 
 module.exports = {
   findFactors,
@@ -22,5 +23,6 @@ module.exports = {
   runtime,
   genPrimeArrUnderMax,
   isPandigital,
-  isPalindrome
+  isPalindrome,
+  Array
 }
