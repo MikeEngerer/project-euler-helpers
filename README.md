@@ -30,8 +30,8 @@ All others:
   - findFactorCount(num)
   - findFactorSum(num)
   - isPalindrome(num/str)
-  - isPandigital(num)
-  - genGrid(row, col, fill)
+  - isPandigital(num, max)
+  - genGrid(rows, cols, fill)
   - genAlphaArr(charStart, charEnd)
   - genAlphaObj(charStart, charEnd)
 
@@ -71,7 +71,7 @@ isFib(4) // false
 const { isPrime, genPrimeArr, genPrimeArrUnderMax } = require('project-euler-helpers')
 
 genPrimeArr(5) // [2, 3, 5, 7, 11]
-genPrimeArrUnderMax(10) // [2, 3, 5, 7]
+genPrimeArrUnderMax(11) // [2, 3, 5, 7]
 isPrime(11) // true
 isPrime(10) // false
 ```
@@ -86,17 +86,18 @@ findFactorCount(10) // 4
 const { isPalindrome } = require('project-euler-helpers')
 
 isPalindrome(101) // true
+isPalindrome('1010') // true
 isPalindrome(1010) // false
 ```
 ```
 const { genGrid } = require('project-euler-helpers')
 
-genGrid(3, 4, 0) // [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]] *(rows, cols, val)*
+genGrid(3, 4, 0) // [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
 ```
 ```
 const { isPandigital } = require('project-euler-helpers')
 
-// isPandigital(num, range = 9)
+// second arg is range(1, max) inclusive
 isPandigital(123456789) // true
 isPandigital(53142, 5) // true
 isPandigital(12345, 4) // false
