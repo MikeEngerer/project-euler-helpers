@@ -34,6 +34,12 @@ All others:
   - genGrid(rows, cols, fill)
   - genAlphaArr(charStart, charEnd)
   - genAlphaObj(charStart, charEnd)
+  - triangle(num)
+  - isTriangle(num)
+  - pentagonal(num)
+  - isPentagonal(num)
+  - hexagonal(num)
+  - isHexagonal(num)
 
 #### Examples:
 ```
@@ -107,4 +113,13 @@ const { genAlphaArr, genAlphaObj } = require('project-euler-helpers')
 
 genAlphaArr('A', 'Z') // ['A', 'B', ... ,'Z']
 genAlphaObj('a', 'x') // { 'a': 1, 'b': 2, ..., 'z': 26}
+```
+```
+const { 
+  triangle, isTriangle, pentagonal, isPentagonal, hexagonal, isHexagonal 
+} = require('project-euler-helpers')
+
+isTriangle(triangle(10)) // true
+isPentagonal(pentagonal(10)) // true
+isHexagonal(hexagonal(10)) // true
 ```

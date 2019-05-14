@@ -7,6 +7,14 @@ const { runtime } = require('./src/runtime')
 const { isPandigital } = require('./src/pandigital')
 const { isPalindrome } = require('./src/palindromes')
 const { Array } = require('./src/Array')
+const { 
+  triangle,
+  pentagonal,
+  hexagonal,
+  isTriangle,
+  isPentagonal,
+  isHexagonal
+} = require('./src/triPentHex')
 
 module.exports = {
   findFactors,
@@ -24,5 +32,11 @@ module.exports = {
   genPrimeArrUnderMax,
   isPandigital,
   isPalindrome,
+  triangle,
+  pentagonal,
+  hexagonal,
+  isTriangle,
+  isPentagonal,
+  isHexagonal,
   Array
 }
