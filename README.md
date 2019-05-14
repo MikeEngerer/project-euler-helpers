@@ -2,7 +2,7 @@
 
 ### About
 
-My ongoing collection of JS helper functions for commonly occuring tasks in the [Project-Euler](https://projecteuler.net/) problem set. 
+Collection of JS helper functions for commonly occuring tasks in the [Project-Euler](https://projecteuler.net/) problem set. 
 
 ### Setup
 
