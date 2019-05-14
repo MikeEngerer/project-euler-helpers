@@ -92,7 +92,7 @@ findFactorCount(10) // 4
 const { isPalindrome } = require('project-euler-helpers')
 
 isPalindrome(101) // true
-isPalindrome('1010') // true
+isPalindrome('101') // true
 isPalindrome(1010) // false
 ```
 ```
