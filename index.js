@@ -1,3 +1,4 @@
+require('./src/Array')
 const { findFactors, findFactorCount, findFactorSum } = require('./src/factors')
 const { isPrime, genPrimeArr, genPrimeArrUnderMax } = require('./src/primes')
 const { genAlphaArr, genAlphaObj } = require('./src/alphabet')
@@ -6,7 +7,6 @@ const { genGrid } = require('./src/grid')
 const { runtime } = require('./src/runtime')
 const { isPandigital } = require('./src/pandigital')
 const { isPalindrome } = require('./src/palindromes')
-const { Array } = require('./src/Array')
 const { 
   triangle,
   pentagonal,
@@ -37,6 +37,5 @@ module.exports = {
   hexagonal,
   isTriangle,
   isPentagonal,
-  isHexagonal,
-  Array
+  isHexagonal
 }

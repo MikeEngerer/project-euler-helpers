@@ -12,13 +12,13 @@ npm i --save project-euler-helpers
 
 ### Usage
 
-Import your desired methods from 'project-euler-helpers'.
+Array prototype methods are available wherever this package is imported:
 
-Array prototype methods:
   - Array.unique() 
   - Array.last()
 
-All others:
+Import your desired methods from 'project-euler-helpers':
+
   - runtime(func, args)
   - isFib(num)
   - genFibArr(length)
@@ -43,7 +43,7 @@ All others:
 
 #### Examples:
 ```
-const { Array } = require('project-euler-helpers')
+require('project-euler-helpers')
 
 // your arr
 let arr = [1, 4, 2, 1, 2, 7]
