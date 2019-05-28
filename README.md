@@ -23,6 +23,7 @@ Import your desired methods from 'project-euler-helpers':
   - isFib(num)
   - genFibArr(length)
   - fibNthTerm(n)
+  - nextFib(last, secondLast)
   - isPrime(num)
   - genPrimeArr(length)
   - genPrimeArrUnderMax(max)
@@ -70,6 +71,7 @@ const { genFibArr, fibNthTerm, isFib } = require('project-euler-helpers')
 
 genFibArr(10) // [ 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 ]
 fibNthTerm(10) // 55
+nextFib([1, 3], [8]) // [2, 1] -> for use with big nums, takes/returns array of digits
 isFib(55) // true
 isFib(4) // false
 ```

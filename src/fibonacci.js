@@ -52,9 +52,26 @@ const isFib = (num, last = [1], secondLast = [1]) => {
   return isFib(num, last, lastCopy)
 }
 
+const nextFib = (last, secondLast) => {
+  last = last.reverse()
+  secondLast = secondLast.reverse()
+  let lastCopy = last.slice(), over = 0
+  for (let i = 0; i < last.length; i++) {
+    last[i] += secondLast[i] + over || over
+    if (last[i] > 9) {
+      over = 1
+      last[i] -= 10
+    } else {
+      over = 0
+    }
+  }
+  if (over) last.push(over)
+  return last.reverse()
+}
+
 module.exports = {
   fibNthTerm,
   isFib,
-  genFibArr
-
+  genFibArr,
+  nextFib
 }
